@@ -1,0 +1,111 @@
+/* Custom styles for the thread segment editor */
+
+.aesthetic-segment-editor {
+  /* Base styling */
+  font-family: var(--font-sans);
+}
+
+.aesthetic-segment-editor .ProseMirror {
+  /* Editor content styling */
+  min-height: 120px;
+  padding: 0.5rem;
+  outline: none;
+  line-height: 1.6;
+}
+
+.aesthetic-segment-editor .ProseMirror p {
+  margin-bottom: 0.75rem;
+}
+
+.aesthetic-segment-editor .ProseMirror:focus {
+  outline: none;
+}
+
+/* Placeholder styling */
+.aesthetic-segment-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: rgba(var(--muted-foreground-rgb), 0.4);
+  pointer-events: none;
+  height: 0;
+}
+
+/* Custom placeholder colors for light and dark themes */
+:root {
+  --muted-foreground-rgb: 100, 116, 139;
+}
+
+.dark .aesthetic-segment-editor .ProseMirror p.is-editor-empty:first-child::before {
+  color: rgba(148, 163, 184, 0.4);
+}
+
+/* Styling for different elements */
+.aesthetic-segment-editor .ProseMirror h1,
+.aesthetic-segment-editor .ProseMirror h2,
+.aesthetic-segment-editor .ProseMirror h3,
+.aesthetic-segment-editor .ProseMirror h4 {
+  font-family: var(--font-playfair);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.aesthetic-segment-editor .ProseMirror h1 {
+  font-size: 1.75rem;
+}
+
+.aesthetic-segment-editor .ProseMirror h2 {
+  font-size: 1.5rem;
+}
+
+.aesthetic-segment-editor .ProseMirror h3 {
+  font-size: 1.25rem;
+}
+
+.aesthetic-segment-editor .ProseMirror ul,
+.aesthetic-segment-editor .ProseMirror ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  list-style-position: outside;
+}
+
+.aesthetic-segment-editor .ProseMirror ul {
+  list-style-type: disc;
+}
+
+.aesthetic-segment-editor .ProseMirror ol {
+  list-style-type: decimal;
+}
+
+.aesthetic-segment-editor .ProseMirror ul li,
+.aesthetic-segment-editor .ProseMirror ol li {
+  margin-bottom: 0.25rem;
+}
+
+.aesthetic-segment-editor .ProseMirror blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--muted-foreground);
+  margin: 1rem 0;
+}
+
+.aesthetic-segment-editor .ProseMirror a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.aesthetic-segment-editor .ProseMirror code {
+  background-color: var(--muted);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+/* Transition effects */
+.aesthetic-segment-editor .ProseMirror * {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}

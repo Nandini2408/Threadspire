@@ -1,0 +1,5 @@
+.ProseMirror .placeholder, .ProseMirror p.is-editor-empty:first-child::before {
+  color: #cccccc;
+  opacity: 0.6;
+  pointer-events: none;
+} 
