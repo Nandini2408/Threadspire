@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "start": "vite preview --host",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier --write \"src//*.{ts,tsx,css,md,json}\""
+    "format": "prettier --write \"src/*.{ts,tsx,css,md,json}\""
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
@@ -39,7 +39,6 @@
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "@vitejs/plugin-react-swc": "^1.0.0",  // Add this line
     "autoprefixer": "^10.4.17",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
