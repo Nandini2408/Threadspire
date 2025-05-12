@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "start": "vite preview --host",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css,md,json}\""
+    "format": "prettier --write \"src//*.{ts,tsx,css,md,json}\""
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
@@ -23,8 +23,8 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.323.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-router-dom": "^6.22.0",
     "recharts": "^2.15.3",
     "sonner": "^1.4.0",
